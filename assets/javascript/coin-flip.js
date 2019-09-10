@@ -1,9 +1,16 @@
 (function(){
+    let flipButton = document.querySelector("button");
+    flipButton.addEventListener("click", flipCoin);
 
-    //outputs string to the body of the document
-    document.write("hello from coin-flip.js");
-
-    //outputs the string to the browsers console
-    console.log("hello from coin-flip.js");
-
+    function flipCoin() {
+        let coinVal = Math.random();
+        console.log(coinVal);
+        if (coinVal >= 0.5)
+        {
+            console.log("heads");
+        }
+        else {
+            console.log("tails");
+        }
+    }
 })();
