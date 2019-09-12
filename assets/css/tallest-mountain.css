@@ -1,0 +1,20 @@
+body {
+    background-color: peru;
+}
+
+#mountains {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 535px;
+}
+
+.mountain {
+    width: 13%;
+    background-color: forestgreen;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
