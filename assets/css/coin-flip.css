@@ -1,36 +1,35 @@
 /* code source: https://3dtransforms.desandro.com/card-flip */
 
-img {
-    width: 200px;
+:root {
+  --flip-degree: 900deg;
 }
 
 .scene {
-    width: 300px;
-    height: 400px;
-    perspective: 600px;
+    width: 500px;
+    height: 500px;
+    perspective: 800px;
 }
 
 .coin{
     width: 100%;
-    height: 200%;
-    display: flex;
-    position: absolute;
+    height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
 }
 
-.coin__face {
+.coin-face {
     position: absolute;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
   }
 
-.card__face--front {
-  background: red;
+.coin-face--tails {
+  transform: rotateY(var(--flip-degree));
 }
 
-.card__face--back {
-  background: blue;
-  transform: rotateY( 180deg );
+.coin.is-flipped {
+  transform: rotateY(var(--flip-degree));
 }

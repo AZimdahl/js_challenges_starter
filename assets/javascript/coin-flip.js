@@ -1,16 +1,19 @@
-(function(){
-    let flipButton = document.querySelector("button");
-    flipButton.addEventListener("click", flipCoin);
+(function () {
+    let coin = document.querySelector(".coin");
+    let coinFlipStyle = document.documentElement;
+
+    coin.addEventListener("click", flipCoin);
 
     function flipCoin() {
         let coinVal = Math.random();
-        console.log(coinVal);
-        if (coinVal >= 0.5)
-        {
-            console.log("heads");
+
+        if (coinVal >= 0.5) {
+            coinFlipStyle.style.setProperty('--flip-degree', '720deg');
         }
         else {
-            console.log("tails");
+            coinFlipStyle.style.setProperty('--flip-degree', '900deg');
         }
+        
+        coin.classList.toggle('is-flipped');
     }
 })();
