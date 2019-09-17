@@ -8,6 +8,13 @@
 </head>
 <body>
     <a href="index.html"><- Back to Navigation</a><br/><br/>
+    <p>Starting Population: <input type="number" id="startingPopulation" min="0" value="200"> hares</p>
+    <p>Birth Rate: <input type="number" id="birthRate" max="100" min="0" value="10">%</p>
+    <p>Number of Weeks: <input type="number" id="numberOfWeeks" min="1" value="5"> weeks</p>
+
+    <button>Breed</button>
+
+    <p id="result">There will be "x" Cherokee Hares after "y" weeks</p>
 
     <script src="./assets/javascript/cherokee-hare.js"></script>
 </body>
