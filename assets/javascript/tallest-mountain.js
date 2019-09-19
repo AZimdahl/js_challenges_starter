@@ -2,11 +2,11 @@
     let randomizer = document.querySelector("button");
     randomizer.addEventListener("click", resetColor);
 
-    let mountains = [];
-
     randomizeMts();    
 
     function randomizeMts () {
+        let mountains = [];
+
         for(let i=0; i<7; i++){
             mountains[i] = Math.random() * 100;
             
