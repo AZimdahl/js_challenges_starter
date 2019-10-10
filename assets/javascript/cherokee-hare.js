@@ -23,7 +23,7 @@ function getParameters() {
     numberOfWeeks = document.querySelector("#numberOfWeeks").value;
 
     startingPopulation = parseInt(startingPopulation);
-    birthRate = parseFloat(birthRate)/10;
+    birthRate = parseFloat(birthRate)/100;
     numberOfWeeks = parseInt(numberOfWeeks);
 }
 })();
